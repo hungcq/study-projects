@@ -1,0 +1,26 @@
+{
+  "name": "library-ict",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "7.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuyJokezy/library-ict-webservice.git"
+  },
+  "author": "ict-01",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HuyJokezy/library-ict-webservice/issues"
+  },
+  "homepage": "https://github.com/HuyJokezy/library-ict-webservice#readme"
+}

@@ -1,0 +1,2 @@
+Hung: Work on Use case code and test unit for it
+Huy: Work on Webservice and test unit exercise (Linear Equation, Triangle, Quadratic Equation)

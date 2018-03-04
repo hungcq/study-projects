@@ -1,0 +1,8 @@
+raijin.librarymanagementsystem
+raijin.librarymanagementsystem.boundaries.activities
+raijin.librarymanagementsystem.boundaries.adapters
+raijin.librarymanagementsystem.boundaries.fragments
+raijin.librarymanagementsystem.controllers
+raijin.librarymanagementsystem.entities
+raijin.librarymanagementsystem.entities.webservices
+raijin.librarymanagementsystem.utils

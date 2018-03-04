@@ -1,0 +1,197 @@
+package raijin.views;
+
+import raijin.controllers.Controller;
+import raijin.controllers.ControllerInterface;
+import raijin.models.AnnualStudent;
+import raijin.models.Course;
+import raijin.models.CreditStudent;
+import raijin.utils.DataManager;
+
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.xml.crypto.Data;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import java.util.List;
+
+public class SMyCourses extends JDialog {
+    private JPanel contentPane;
+    private JPanel tablePanel;
+    private JButton viewCourseButton;
+    private JButton editInfoButton;
+    private JButton checkGraduateButton;
+    private JButton logoutButton;
+    private JTable dataTable;
+    public static DefaultTableModel tmd;
+    private ControllerInterface c1;
+
+    public SMyCourses(ControllerInterface controller) {
+        c1 = controller;
+        setContentPane(contentPane);
+        setModal(true);
+        createUIComponents();
+        tablePanel.setLayout(new BorderLayout());
+        tablePanel.add(new JScrollPane(dataTable));
+
+
+        viewCourseButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onViewCourse();
+            }
+        });
+
+
+        editInfoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onEditInfo();
+            }
+        });
+
+        checkGraduateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onCheckGraduate();
+            }
+        });
+
+        logoutButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                c1.logOut();
+                dispose();
+                LoginView lview = new LoginView(c1);
+                lview.pack();
+                lview.setLocationRelativeTo(null);
+                lview.setVisible(true);
+            }
+        });
+        // call onCancel() when cross is clicked
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                onCancel();
+            }
+        });
+
+        // call onCancel() on ESCAPE
+        contentPane.registerKeyboardAction(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                onCancel();
+            }
+        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+
+    private void onCancel() {
+        // add your code here if necessary
+        dispose();
+    }
+
+    private void onViewCourse() {
+        SCourseList view = new SCourseList();
+        view.pack();
+        view.setLocationRelativeTo(null);
+        view.setVisible(true);
+    }
+
+
+    private void onEditInfo() {
+        SEditInfo view = new SEditInfo(c1);
+        view.pack();
+        view.setLocationRelativeTo(null);
+        view.setVisible(true);
+    }
+
+    private void onCheckGraduate() {
+        SCheckGraduate check = new SCheckGraduate();
+        check.pack();
+        check.setLocationRelativeTo(null);
+        check.setVisible(true);
+    }
+
+    private void createUIComponents() {
+        Vector<String> colNames = new Vector<>();
+        colNames.add("ID");
+        colNames.add("Name");
+        colNames.add("Grade");
+        tmd = new DefaultTableModel(colNames, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                //all cells false
+                return false;
+            }
+        };
+        // for .... tmd.addRow();
+//        System.out.println(DataManager.getCurrentID());
+//        for (Course course : c1.getRegisteredCourses("20142137")) {
+//            System.out.println(course.getId());
+////            tmd.addRow(new Object[]{course.getId(), course.getName(), course.getStudentPoint(DataManager.getCurrentID())});
+//        }
+//        ((CreditStudent) DataManager.getInst().findStudentByID("20142137")).registerCourse("MI1001");
+//        System.out.println(c1.getRegisteredCourses("20142137"));
+        List<String> list = DataManager.getInst().findStudentByID(DataManager.getCurrentID()).getCourseList();
+        for (String courseid : list) {
+            double tmp = (DataManager.getInst().findCourseByID(courseid)).getStudentPoint(DataManager.getCurrentID());
+            if (tmp == -1) {
+                tmd.addRow(new Object[]{courseid, DataManager.getInst().findCourseByID(courseid).getName(), "N/A"});
+            } else {
+                tmd.addRow(new Object[]{courseid, DataManager.getInst().findCourseByID(courseid).getName(), String.valueOf(tmp)});
+            }
+        }
+        tmd.fireTableDataChanged();
+        dataTable = new JTable(tmd);
+    }
+
+
+    {
+// GUI initializer generated by IntelliJ IDEA GUI Designer
+// >>> IMPORTANT!! <<<
+// DO NOT EDIT OR ADD ANY CODE HERE!
+        $$$setupUI$$$();
+    }
+
+    /**
+     * Method generated by IntelliJ IDEA GUI Designer
+     * >>> IMPORTANT!! <<<
+     * DO NOT edit this method OR call it in your code!
+     *
+     * @noinspection ALL
+     */
+    private void $$$setupUI$$$() {
+        contentPane = new JPanel();
+        contentPane.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(3, 1, new Insets(10, 10, 10, 10), -1, -1));
+        final JPanel panel1 = new JPanel();
+        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 2, new Insets(0, 0, 0, 0), -1, -1));
+        contentPane.add(panel1, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, 1, null, null, null, 0, false));
+        final JPanel panel2 = new JPanel();
+        panel2.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 3, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.add(panel2, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+        viewCourseButton = new JButton();
+        viewCourseButton.setText("View Course");
+        panel2.add(viewCourseButton, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        editInfoButton = new JButton();
+        editInfoButton.setText("Edit Info");
+        panel2.add(editInfoButton, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        checkGraduateButton = new JButton();
+        checkGraduateButton.setText("Check Graduate");
+        panel2.add(checkGraduateButton, new com.intellij.uiDesigner.core.GridConstraints(0, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        logoutButton = new JButton();
+        logoutButton.setText("Logout");
+        panel1.add(logoutButton, new com.intellij.uiDesigner.core.GridConstraints(0, 1, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        tablePanel = new JPanel();
+        tablePanel.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(1, 1, new Insets(0, 0, 0, 0), -1, -1));
+        contentPane.add(tablePanel, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_BOTH, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
+        final JLabel label1 = new JLabel();
+        label1.setText("My Courses");
+        contentPane.add(label1, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+    }
+
+    /**
+     * @noinspection ALL
+     */
+    public JComponent $$$getRootComponent$$$() {
+        return contentPane;
+    }
+}

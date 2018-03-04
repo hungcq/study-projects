@@ -1,0 +1,3 @@
+Chu Quoc Hung - Use Case Add New Copy, Supplementary Specification
+Nguyen Quoc Huy - Use Case Add New Book, Glossary
+Both work on Use case diagram, check and fix each other work.

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_score"
+            android:icon="@drawable/ic_score_48px"
+            android:title="@string/score_management" />
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/ic_notifications_black_48dp"
+            android:title="@string/notification" />
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_timetable_48px"
+            android:title="@string/timetable" />
+    </group>
+
+    <item android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_account_settings"
+                    android:icon="@drawable/ic_settings_black_48dp"
+                    android:title="@string/account_settings" />
+                <item
+                    android:id="@+id/nav_signout"
+                    android:icon="@drawable/ic_signout_48px"
+                    android:title="@string/sign_out" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

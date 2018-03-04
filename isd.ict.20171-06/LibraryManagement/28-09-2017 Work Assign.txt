@@ -1,0 +1,5 @@
+Chu Quoc Hung - Use Case Register to borrow book
+Nguyen Quoc Huy - Use Case Register account
+Both work on Use case diagram, check and fix each other work.
+Hung Review: Huy need to specify Add new book Use case
+Huy Review: Have all necessary part. Hung need to resize some of the images (however it maybe a problem on my computer)

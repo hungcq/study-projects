@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:orientation="vertical">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottom_wrapper"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_details"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_swipe_button"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_details_white_48dp" />
+
+            <ImageButton
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_swipe_button"
+                android:padding="@dimen/_8sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_mode_edit_white_48dp" />
+
+            <ImageButton
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_swipe_button"
+                android:padding="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_clear_white_48dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp"
+            style="@style/SelectableBackground">
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/image_letter"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_name"
+                    style="@style/BlackBoldTextView"
+                    android:textSize="@dimen/_15sdp"/>
+                <TextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

@@ -1,0 +1,3 @@
+Nguyễn Quốc Huy - Supplementary Specification, Improve Table of Events Flow of use case Register Course
+Chử Quốc Hưng - Glossary, Improve Table of Events Flow of use case Add Course
+Both review each other's work and improve Use Case Diagram

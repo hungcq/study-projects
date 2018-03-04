@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SIS-OOPintro:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SIS_OOPintro_jar</output-path>
+    <root id="archive" name="SIS-OOPintro.jar">
+      <element id="module-output" name="SIS-OOPintro" />
+    </root>
+  </artifact>
+</component>

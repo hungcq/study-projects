@@ -1,0 +1,108 @@
+
+package raijin.studentmanager.models.student;
+
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Student {
+
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("username")
+    @Expose
+    private String username;
+    @SerializedName("password")
+    @Expose
+    private String password;
+    @SerializedName("first_name")
+    @Expose
+    private String firstName;
+    @SerializedName("last_name")
+    @Expose
+    private String lastName;
+    @SerializedName("class_id")
+    @Expose
+    private String classId;
+    @SerializedName("sessions")
+    @Expose
+    private List<Integer> sessions = null;
+
+    public Student(String firstName, String lastName, String classId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.classId = classId;
+    }
+
+    public Student(String username, String password, String firstName, String lastName, String classId) {
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.classId = classId;
+    }
+
+    public void setData(Student student) {
+        firstName = student.firstName;
+        lastName = student.lastName;
+        classId = student.classId;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getClassId() {
+        return classId;
+    }
+
+    public void setClassId(String classId) {
+        this.classId = classId;
+    }
+
+    public List<Integer> getSessions() {
+        return sessions;
+    }
+
+    public void setSessions(List<Integer> sessions) {
+        this.sessions = sessions;
+    }
+
+}

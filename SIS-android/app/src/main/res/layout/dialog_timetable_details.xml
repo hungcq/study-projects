@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/lecturer"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_lecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/room"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/period"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/week_day"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:id="@+id/tv_weekday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15sdp" />
+
+</LinearLayout>

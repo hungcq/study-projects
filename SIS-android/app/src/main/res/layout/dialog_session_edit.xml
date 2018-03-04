@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/semester"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <RadioGroup
+        android:id="@+id/rg_semester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <RadioButton
+            android:id="@+id/radio_semester_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:checked="true"
+            android:text="Semester 1" />
+
+        <RadioButton
+            android:id="@+id/radio_semester_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Semester 2" />
+
+        <RadioButton
+            android:id="@+id/radio_semester_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:text="Semester 3" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/max_enroll"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <EditText
+        android:id="@+id/et_max_enroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:inputType="number"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_period"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/end_period"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_day"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <RadioGroup
+        android:id="@+id/rg_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <RadioButton
+            android:id="@+id/radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/radio_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/radio_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/radio_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <RadioButton
+            android:id="@+id/radio_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/building"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lecturer"
+        android:textColor="#80000000"
+        android:textSize="@dimen/_11sdp" />
+
+    <Spinner
+        android:id="@+id/spinner_lecturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp" />
+
+</LinearLayout>

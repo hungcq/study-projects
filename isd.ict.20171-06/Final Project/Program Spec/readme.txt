@@ -1,0 +1,1 @@
+Design Patterns Used in our application is demonstrate in Sofware Design Description document.
