@@ -1,0 +1,103 @@
+<div style="float:right;padding-bottom:50px;padding-top:20px">
+  <% if current_user %>
+    <%= link_to my_songs_path do%>
+      <button type="button" name="button" class="btn btn-primary" style="margin-left:10px">My songs</button>
+    <%end%>
+  <% end %>
+  <%= link_to new_song_path do %>
+    <button type="button" name="button" class="btn btn-success">Share your music</button>
+  <% end %>
+</div>
+<div class="container-fluid" style="padding-top:70px;">
+  <div class="row">
+    <div class="col-md-7" style="background-color:#fafafa;border-radius: 3px;border: 1px solid #e6e6e6;">
+      <h1>
+        <span style="display:inline;">
+          <%= image_tag(@song.artwork.url(:thumb), style: "width:60px;display:inline;") %>
+        </span>
+        <%= @song.title %> - <%= @song.artist %>
+        <span style="display:inline;float:right">
+          <% if current_user && current_user.id == @song.user.id %>
+            <%= link_to edit_song_path(@song) do %>
+              <i class="fa fa-edit" data-toggle="tooltip" title="Edit" style="font-size:20px;"></i>
+            <% end %>
+          <% end %>
+        </span>
+      </h1>
+      <p style="font-color:#C0C0C0">
+        Uploaded by
+        <%= link_to user_songs_path(@song.user) do %>
+          <%= @song.user.username %>
+        <% end %>
+      </p>
+      <h4>
+        Description: <%= @song.description %>
+      </h4>
+      <div class="container-fluid" style="padding:20px">
+        <div class="row">
+          <div class="col-xs-4">
+            <% if current_user %>
+              <% if @song.likes.find_by(user_id: current_user) %>
+                <%= link_to [@song, @song.likes.build], method: :post do %>
+                  <i class="fa fa-heart" data-toggle="tooltip" title="Unlike this song" style="font-size:30px;color:red;"></i>
+                <% end %>
+              <% else %>
+                <%= link_to [@song, @song.likes.build], method: :post do %>
+                  <i class="fa fa-heart-o" data-toggle="tooltip" title="Like this song" style="font-size:30px;color:black;"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+            <!-- <i class="fa fa-comment-o" style="display:inline;padding-left:5px;font-size:20px;cursor:pointer" id="comment_box"></i> -->
+            <p><%= @song.likes.count %> <span style="display:inline;">
+                <% if @song.likes.count > 1 %>
+                  likes
+                <% else %>
+                  like
+                <% end %>
+              </span></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <audio controls style="width:100%">
+          <source src='<%= @song.file %>' type="audio/ogg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <h2>Comments</h2>
+      <%= render @song.comments %>
+
+      <% if current_user %>
+        <%= render 'comments/form' %>
+      <% end %>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-3" style="background-color:#fafafa;border-radius: 3px;border: 1px solid #e6e6e6;float:right;">
+      <h4>Hotest Songs</h4>
+      <table class="table">
+        <tr>
+          <th style="width:70%"></th>
+          <th style="width:30%"></th>
+        </tr>
+        <% @hot_songs.each do |hot_song| %>
+          <tr>
+            <td><%= link_to hot_song.title, song_path(hot_song) %></td>
+            <td>
+              <%= hot_song.likes.count %> <span style="display:inline;">
+                <% if hot_song.likes.count > 1 %>
+                  likes
+                <% else %>
+                  like
+                <% end %>
+            </span>
+            </td>
+
+          </tr>
+        <% end %>
+      </table>
+      <%= paginate @hot_songs, :theme => 'twitter-bootstrap-3', :pagination_class => "pagination-small pagination-centered" %>
+    </div>
+  </div>
+</div>

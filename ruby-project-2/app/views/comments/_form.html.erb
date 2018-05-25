@@ -1,0 +1,25 @@
+<%= form_with(model: [ @song, @song.comments.build ], local: true, class: 'form-inline') do |form| %>
+<div class="actionBox">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-11">
+        <div class="form-group" style="width:100%">
+          <%= form.text_field :content, class: 'form-control', autofocus: true, required: true%>
+        </div>
+        <!-- <input class="form-control" type="text" placeholder="Your comments" /> -->
+      </div>
+      <div class="col-sm-1" >
+        <%= form.submit 'Add', :class => 'btn btn-default'%>
+        <!-- <button class="btn btn-default">Add</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+
+  </p> -->
+<% end %>
