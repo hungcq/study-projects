@@ -1,0 +1,15 @@
+.paddingLeftRight {
+    padding: 30px 20px 30px 20px;
+}
+
+.marginRight {
+    margin-right: 30px;
+}
+
+#clickable:hover{
+    cursor: pointer !important;
+}
+
+.modalLabel {
+    width: 100px;
+}
