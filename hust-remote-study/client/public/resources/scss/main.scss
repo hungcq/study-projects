@@ -1,0 +1,32 @@
+@mixin dot($index) {
+    .dot-#{$index} {
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $index;
+    }
+    .dot-dot-dot-#{$index} {
+        @extend .dot-#{$index};
+    }
+}
+@mixin flexBox($align, $justifyContent) {
+    .display-flex-#{$align}-#{$justifyContent} {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        @if ($align) {
+            align-items: $align;
+            -webkit-align-items: $align;
+        }
+        @if ($justifyContent) {
+            justify-content: $justifyContent;
+        }
+    }
+}
+// @include flexBox(null, null);
+@for $i from 1 through 10 {
+    @include dot($i);
+}

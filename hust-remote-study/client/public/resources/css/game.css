@@ -1,0 +1,221 @@
+.this_is_title_answer_sheet_panel {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+border-bottom: 1px solid #999999;
+font-weight: bold;
+color: white;
+text-align: center;
+background-color: #0647a6;
+}
+.btnNext-game{
+background-color: #00a99d;
+color: white;
+max-width: 150px;
+padding: 7px 15px;
+border: none;
+display: block;
+border-radius: 3px;
+position: absolute;
+right: 130px;
+bottom: 45px;
+}
+.radioButtonAnswer {
+border: 1px solid #666;
+border-radius: 100%;
+display: inline-block;
+vertical-align: middle;
+margin: 5px;
+color: #666;
+outline: none;
+width: 33px;
+height: 33px;
+text-align: center;
+}
+.radioButtonAnswer:HOVER , .radioButtonAnswer.ACTIVE, .radioButtonAnswer:ACTIVE{
+cursor: pointer;
+border: 1px solid #666;
+border-radius: 100%;
+}
+.buttonParagraphQuestion {
+color: #fcfcfc;
+border-radius: 100%;
+position: absolute;
+right: 20px;
+z-index: 10000;
+-webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.75);
+}
+.buttonParagraphQuestion:ACTIVE {
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+}
+.contentPanelGame {
+width: 100%;
+}
+.scoreView {
+padding: 10px 15px 15px 10px !important;
+position: absolute;
+top: -3px;
+right: 4px;
+background-size: 100% 100%;
+color: white;
+}
+.numberAnswerQuestion{
+padding: 6px 10px !important;
+margin: 6px;
+text-align: center;
+}
+.cardAnswer-correct {
+background: rgba(0, 177, 132, 0.2) !important;
+}
+.cardAnswer-incorrect {
+background: rgba(254, 107, 67, 0.2) !important;
+}
+.pointer{
+position: relative;
+height: 20px;
+width: 20px;
+border-radius: 15px;
+top: -9.5px;
+border-color: #eaeaea;
+background-image: url("/resources/images/icon_on-off.png") !important;
+background-size: 20px 20px;
+background-repeat: no-repeat;
+left: -2px;
+}
+.slider-bar{
+position: relative;
+background-color: red;
+height: 2px;
+border: none;
+display: inline-block;
+vertical-align: middle;
+width: 95%;
+}
+.basic-game-view-main-panel {
+position: relative;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+width: 100%;
+height: 100%;
+} 
+.basic-game-view-left-panel {
+position: relative;
+width: calc(100% - 210px);
+height: calc(100% - 50px);
+}
+.basic-game-view-right-panel {
+width: 210px;
+height: 100%;
+background: white;
+}
+.game-content-panel {
+padding: 10px 20px;
+}
+#btn-submit-game {
+text-transform: uppercase;
+color: white;
+background: #1d3f9c;
+border: 0;
+outline: none;
+}
+.this_is_time_left_title_answer_sheet_panel {
+padding: 7px 0;
+}
+.this_is_time_left_title_answer_sheet_panel .answer_time-running-style {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.answer-sheet-fixed-panel.fixed {
+position: fixed;
+width: 210px;
+height: calc(100% - 140px);
+bottom: 0px;
+background: white;
+z-index: 9;
+-webkit-transition: height 0.5s;
+transition: height 0.5s;
+}
+#content .answer-sheet-fixed-panel {
+height: 100%;
+}
+.answer-sheet-fixed-panel.fixed.scrolling {
+height: calc(100% - 70px);
+}
+.horizontalFlowPanel {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+.cardPreview {
+width: 100%;
+background-color: white;
+color: #333333;
+}
+.matching-panel>tbody>tr>td {
+padding: 10px;
+width: 50%;
+}
+.card-matching-choosed {
+background: #c7c7c7 !important;
+}
+.card-matching-incorrect {
+background: #fe6b43 !important;
+}
+.card-matching {
+box-shadow: rgb(199, 197, 197) 0px 0px 3px 1px;
+}
+.game-code-view-main-view-panel {
+padding: 10px;
+position: relative;
+background-color: white;
+box-shadow: rgb(199, 197, 197) 0px 0px 3px 1px;
+}
+.game-code-view-hint-answer {
+font-style: italic;
+padding: 0px 15px;
+text-align: justify;
+}
+.button-back-review {
+color: white !important;
+border: 0;
+border-radius: 3px;
+padding: 7px 20px;
+text-transform: uppercase;
+display: block;
+width: 100px;
+margin: 10px 20px;
+text-decoration: none !important;
+}
+@media(max-width: 768px) {
+	.basic-game-view-left-panel {
+	width: 100%;
+	}
+	.basic-game-view-main-panel {
+	flex-direction: column;
+	}
+	#btn-submit-game {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px 30px;
+    border-radius: 3px;
+	}
+	.game-content-panel {
+	padding-bottom: 45px;
+	}
+	.audioPlayer_panel {
+	width: 98% !important;
+	}
+}

@@ -1,0 +1,89 @@
+.buttonQuiz-answer {
+	font-size: 1.05em;
+	margin: 2px auto 2px;
+	overflow: hidden;
+	float: left;
+	/* clear: both; */
+}
+
+.buttonQuiz-answer>div, .buttonQuiz-answer>span {
+	margin: 3px;
+	display: table-cell;
+}
+
+.buttonQuiz-answer-text {
+	/* max-width: calc(100% - 30px); */
+	
+}
+
+.footer-page-panel {
+	width: 100%;
+	margin: 0px;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #8BB1E1;
+	position: absolute;
+	left: 0px;
+	bottom: 12px;
+	padding: 0px 95px;
+}
+
+.header-page-panel {
+	width: 100%;
+	margin: 0px;
+	font-style: italic;
+	font-size: 0.8em;
+	color: #8BB1E1;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+	padding: 0px 95px;
+}
+
+.page {
+	font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia,
+		serif;
+	position: relative;
+	width: 210mm;
+	min-height: 297mm;
+	/*         padding: 25mm; */
+	padding-top: 15mm;
+	padding-right: 23mm;
+	padding-bottom: 15mm;
+	padding-left: 27mm;
+	margin: auto;
+	border: 1px #D3D3D3 solid;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.subpage {
+	/*   padding: 1cm; */
+	border: 1px #FFFFFF solid;
+	height: 267mm;
+	font-size: 13pt;
+	/* outline: 1cm #FFFFFF solid; */
+}
+
+@page {
+	size: A4;
+	margin: 0;
+}
+
+@media print {
+	html, body {
+		width: 210mm;
+		height: 297mm;
+	}
+	.page {
+		margin: 0;
+		border: initial;
+		border-radius: initial;
+		width: initial;
+		min-height: initial;
+		box-shadow: initial;
+		background: initial;
+		page-break-after: always;
+	}
+}

@@ -1,0 +1,354 @@
+#comments>* {
+font-size:15px
+}
+#comments form {
+margin-bottom:5px
+}
+.input-comment,.comment-tiem {
+display:-webkit-flex;
+display:flex;
+flex-flow:row wrap;
+margin:10px 0
+}
+.input-comment>* {
+vertical-align:middle
+}
+.input-comment img.avatar,.comment-tiem img.avatar {
+margin:5px 8px 8px
+}
+.input-comment .input,.comment-tiem .comment-item-content {
+width:calc(100% - 85px)
+}
+.input-comment .input .mdl-textfield,.comment-tiem .comment-item-content .mdl-textfield {
+width:100%;
+padding-top:5px;
+position:relative
+}
+.listing-childs .comment-tiem {
+border-bottom:1px dashed #999
+}
+#tb-newComment,#tb-replyComment {
+resize:none;
+overflow-y:hidden
+}
+#btn-send-comment {
+min-height:30px
+}
+.ctrl-comment,.ctrl-reply {
+text-align:right;
+position:relative
+}
+.ctrl-comment .attachImage-cmn {
+position:absolute;
+top:10px;
+right:115px;
+cursor:pointer;
+font-size:20px
+}
+.ctrl-reply .attachImage-cmn {
+position:absolute;
+top:2px;
+right:35px;
+cursor:pointer;
+font-size:20px
+}
+.ctrl-comment .file-preview img,#kvFileinputModal .file-zoom-content img {
+max-width:90%;
+height:auto;
+display:block;
+margin:5px auto
+}
+.ctrl-comment>* {
+display:inline-block!important;
+vertical-align:middle;
+max-width:100%;
+margin:0 auto!important
+}
+.ctrl-comment-item {
+font-size:12px;
+margin-top:5px
+}
+.comment-tiem .user-name {
+font-family:ProximaNova-Regular;
+font-weight:700;
+color:#666;
+margin-right:5px
+}
+#btn-morecomment {
+width:95%;
+margin:10px auto;
+display:block
+}
+.comment-item-content {
+position:relative
+}
+.comment-item-content .tb-comment {
+display:none
+}
+.comment-item-content .edit-comment {
+position:absolute;
+right:0;
+top:5px;
+display:none;
+cursor:pointer
+}
+.comment-item-content.open:HOVER>.edit-comment {
+display:block
+}
+.comment-item-content.edit>form .tb-comment {
+display:block
+}
+.comment-item-content.edit>form .comment-content {
+display:none
+}
+img.img-attach {
+max-height:200px;
+display:block;
+margin:10px 0;
+cursor:pointer
+}
+.userCommentPanel {
+position:relative;
+display: flex;
+align-items: center;
+}
+.userCommentPanel>table {
+margin:0;
+margin-right:10px;
+float:left
+}
+.commentBox {
+position:relative;
+float:left
+}
+.commentBox>table {
+margin:5px 5px 5px 0;
+float:left
+}
+.comment-main-box-new-style {
+min-height: 35px;
+height: 35px;
+padding: 6px 65px 6px 10px;
+overflow: hidden;
+resize: none;
+width: 100%;
+border: 1px solid #aaa;
+border-radius: 3px;
+box-shadow: none;
+outline: none;
+}
+.edit-comment {
+width:calc(100% - 50px)
+}
+@media(max-width: 768px) {
+	.edit-comment {
+	width: 100%;
+	}
+}
+textarea#comment {
+float:left;
+height:40px;
+width:calc(100% - 50px)!important;
+padding-right:75px;
+margin-top:4px;
+overflow:hidden;
+resize:none
+}
+.childCommentExpand .panel-body,
+.childCommentExpand .panel-heading {
+padding:0!important
+}
+.titleGroup {
+padding:5px 0;
+width:100%;
+font-size:18px
+}
+.form-upload-image-panel {
+background-color: transparent;
+margin: 0
+}
+.form-upload-image-panel .file-preview-frame {
+-webkit-box-shadow:0 0 1px 0 #ddd!important;
+-moz-box-shadow:0 0 1px 0 #ddd!important;
+box-shadow:0 0 1px 0 #ddd!important
+}
+.browserImageQuestion {
+font-size:20px;
+color:#999;
+cursor:pointer
+}
+.browserImageEditQuestion {
+font-size:20px;
+color:#999;
+position:absolute!important;
+top:25px;
+right:5px;
+cursor:pointer
+}
+.replyImageUpload {
+font-size:20px;
+color:#999;
+cursor:pointer
+}
+.browserImageEditQuestion:HOVER,
+.replyImageUpload:HOVER,
+.browserImageQuestion:HOVER {
+color:#00a99d
+}
+.browserImageCreateQuestion {
+font-size:20px;
+color:#333;
+position:absolute!important;
+top:20px;
+right:10px;
+cursor:pointer
+}
+.discussionItem-name {
+cursor:pointer;
+color:#1b75bb
+}
+.discussionItem-name:HOVER {
+text-decoration:underline
+}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+top:100%!important;
+bottom:auto!important;
+margin-top:2px
+}
+.emotionNew {
+}
+.emotionReplyNew {
+position:absolute;
+top:8px;
+right:23px
+}
+.browserImageQuestionV2 {
+font-size:20px;
+color:#999;
+cursor:pointer
+}
+.postCommentPanel {
+padding: 10px;
+}
+.comment-options-panel {
+position: absolute;
+right: 7px;
+top: 0;
+height: 100%;
+display: flex;
+align-items: center;
+}
+.comment-options-panel > * {
+margin-left: 3px;
+}
+.comment-options-panel > *:FIRST-CHILD{
+margin-left: 0px;
+}
+.memberTable td:nth-child(2) div,
+.removebackgoundCeltable td:nth-child(2) div {
+float:right
+}
+.memberTable td:nth-child(2),
+.removebackgoundCeltable td:nth-child(2) {
+padding-right:3px!important
+}
+.comment-item-panel {
+display: flex;
+align-items: flex-start;
+position: relative;
+padding: 5px 0;
+margin: 5px 0;
+}
+.tool-comment-panel {
+position: absolute;
+top: 0;
+right: 0;
+width: 20px;
+height: 20px;
+color: #1b75bb;
+font-size: 16px;
+display: none;
+}
+.tool-comment-panel > * {
+cursor: pointer;
+}
+.comment-item-panel:HOVER .tool-comment-panel {
+display: block;
+}
+@media(max-width: 768px) {
+	..tool-comment-panel {
+	display: block;
+	}
+}
+
+.main-question-answer-panel {
+}
+.main-question-answer-panel .post-new-panel {
+width: calc(100% - 60px);
+padding: 10px;
+background: #ddd;
+}
+.main-question-answer-panel .userCommentPanel .imageAvatar {
+margin-right:5px;
+}
+.main-question-answer-panel .comment-options-panel {
+right: 23px;
+}
+.main-question-answer-panel .post-new-panel.post-child {
+padding: 0;
+background: none;
+}
+.border-bottom-post-question-answer {
+}
+
+
+/* chat module */
+.member-chat-item-panel {
+width: 100%;
+display: flex;
+align-items: center
+}
+.member-chat-item-panel:hover {
+background: #efefef;
+cursor: pointer;
+}
+.member-chat-item-panel .avatar_ {
+margin: 5px;
+}
+.member-chat-item-panel .name_ {
+text-align: left;
+font-size: 0.9em;
+-webkit-line-clamp: 1 !important;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: calc(100% - 50px);
+}
+.member-chat-item-panel .iconOnline {
+width: 6px;
+height: 6px;
+background-color: rgb(66, 183, 42);
+border-radius: 100%;
+}
+.member-chat-item-panel .iconTimeOnline {
+font-size: 0.9em;
+color: #b5b0b0;
+padding-right: 5px;
+background-color: transparent;
+}
+#chatListViewId {
+display: flex;
+flex-direction: column;
+}
+.image-button-emotion {
+color: #777;
+font-size: 20px;
+cursor: pointer;
+}
+.comment-options-panel > * {
+cursor: pointer;
+}
+.comment-options-panel > *:HOVER {
+color: #00a99d;
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hust-remote-study",
+  "private_key_id": "7a876fb90f1b5ef549883fa1859eb83dd3154ec6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCzulvCnX4Yaxrs\nENdPTPRnMfJwtf+UILxygWVeqFsOaYqG/WI0TFhT+fzHoTwNtK5ilpQYdK0338fd\nJjyGTGujJVPaGqb4aQlfklbzVCuqlHNOmPg8juqfG90Vk53C99LCuR/BTO/uXywc\nRf10i7k96Xhw7lQ5RhdrsPJGjQJ8bVyHmhZ4W9iy9PqMZMXn0Uajp+6IxWiqJ8kG\nVYuaNiTPvgaoEA5Og8b0wHvzbTaFrWNGWBuzUK95yVHD8H/w9QbVgdWnUHLc1CJ0\nGq0Zxk1t+jsCvYMJSdAZMMMAcgotK1vsDzq8SowFAEPE2izNpyi4WxgFGwPMVWtJ\nE3LeqyBzAgMBAAECggEAOv88qdjbEJbwAnfQxcZEIC/kHp2PpQdN9OSG6xims0dv\n4roAZ5x8Dizsjndd6D3cVJ6LRK/gQIwj5nNrwMYLO0XAjcLb9oU8P3QhOMTzhI4w\nf6d1LSPY3pvd6fxH+D0zoRn105U22W/CYhGTjpNjHnCqSZ/iY96fR4mRLhmRrFgJ\nCVd1Fm8nXzYDusx09fx1UCXZtpdC3iFBAb0eQidcdoowe4XnbnhWEErpUUNA3fXw\nDqBFaaha4bL2pcR7zoKeTPDE31u852Pv9I2b8E+I1vzw4x4sYlaN68I/PugjBkat\nKUbtvczEFeqWBv0x3yZdcP4N4CQ0Ow1pj7eoLMjBGQKBgQDXS0SIMv3CiTE6+wTu\nQuvL7k/S9Ds9kZen742FhbKJFy+afwHDWoxcfmndL1+y9TNTidQtuhk6uG5hnbSs\nGA1U9aL0vmnr74ZPJprQ2LREusMQoXhHyvB2x/44HlfPOzpRQxY2MyIJrLXgtpeq\nJlsoIftVWxQU5eGfp3Mu4g77BQKBgQDVtZxj2XsyHIP9b+Lcn/cEG6H7tRX/Scdw\nFG+DYbBO9ORyHRqV9vrZOtb50iWxVxw7QlMRkQx3t7rq552QxK6pUuSg3Raxupzi\nKOOWKlkfGeOwqAmnt0NwNWjRPqqTTtW26/3A7Kh+H85kUnd6WvHwDenSwBac2SD6\nQM6Li/q3FwKBgBcWZz8D2Nqnw7PDf3/dhVPVNpI0xrWPi2fi9JZBBChXaC91N0cv\nyqWQmOGzVtvmF575xNsyfcoiRRQKyXk7CxL1VIhScyFuCkUqqqeC1bIZJRn/dtqc\nFLVoNQbnmhsLCvHz88nUKe5Hqylx60m/2z6uhjldDwY+sLdiSaPZcinRAoGAZ4e8\nxK6GPSeNVcjPSXyBSU8tsOfwSSVv5b8wqqA3rnh690FcMMxeh8A2hv4kXn5J4fdm\nkLsJJDIw7j3Ymlp+Fu9ebQPOS7mQ6QtP/d50IFoFcP5m9wYUOJbXOY83SXfGlwBK\nhRzhH4C/FuDQmsjWLio/XWbLTZ7ul+2vYfElO28CgYB3HQtn8Ii9e3CWe7tGtKVr\nBcYO3YV2EpJeiWQdr+/Q0/NLg/N/moA1sqdgs2DuXklt+Eme9twnMVhGfTZX0jyX\nfXa0dlKHu4Te1e5Zrwx00jU3kDL4fUf7v3acNoRIg55m9lwnZGI8up79iTtJobY+\nLR1WWeqCruuch6q2f9/qjg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hungcq@hust-remote-study.iam.gserviceaccount.com",
+  "client_id": "100845920048409740402",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hungcq%40hust-remote-study.iam.gserviceaccount.com"
+}

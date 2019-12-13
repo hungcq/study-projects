@@ -1,0 +1,449 @@
+*{
+margin: 0;
+padding: 0;
+}
+/*==================================
+=========TGbusiness-header==========
+==================================*/
+#tgbusiness-header {
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+#tgbusiness-header img{
+width: 90px;
+order: 1
+}
+#tgbusiness-header:BEFORE {
+order: 2
+}
+#tgbusiness-header:AFTER {
+order: 3
+}
+#tgbusiness-header #myNavbar {
+order: 4;
+}
+#tgbusiness-header ul {
+list-style-type: none;
+}
+#tgbusiness-header li {
+display:inline;
+text-decoration:none;
+padding:20px;
+}
+#tgbusiness-header a{
+font-family: 'Roboto', sans-serif;
+font-weight:bold;
+text-decoration:none;
+color:white;
+}
+/*==========================
+=========TGbusiness=========
+==========================*/
+#tgbusiness {
+background: url("/resources/images/thanhgiang/Tg-business/bg-header.jpg") no-repeat;
+background-size: 100% 100%;
+}
+#tgbusiness > div {
+padding-top: 15px;
+}
+#tgbusiness-content {
+padding-top: 50px;
+padding-bottom: 120px;
+}
+#tgbusiness-left{
+color: white
+}
+#tgbusiness-left h1{
+font-family: 'Kanit', sans-serif;
+font-weight: bold;
+border-style: none;
+line-height:1.5
+}
+#tgbusiness-left .tgbusiness-left-des {
+font-size: 1em;
+color: white
+}
+.tgbusiness-left-des > img {
+width: 20px;
+}
+#tgbusiness-left h3{
+font-family: 'Kanit', sans-serif;
+border-style: none;
+color: #798EBD;
+}
+#tgbusiness-left .tgbusiness-question{
+vertical-align: middle;
+}
+#tgbusiness-left span{
+font-family: 'Roboto', sans-serif;
+}
+#tgbusiness-left a{
+color: white;
+border-style: solid;
+border-color: white;
+padding: 12px 40px 12px 40px;
+font-size: 18px;
+font-family: 'Kanit', sans-serif;
+text-decoration: none;
+}
+#tgbusiness-right img {
+float: right;
+width: 80%;
+margin: 0 auto;
+}
+/*==========================
+=========TGreason===========
+==========================*/
+#tgreason{
+background-color: #f4f8fd;
+padding-bottom: 50px;
+}
+#tgreason #tgreason-text, 
+#tgtopic #tgtopic-text{
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#tgreason #tgreason-text img{
+width:100px;
+}
+#tgreason #tgreason-text h2{
+font-family: 'Roboto', sans-serif;
+font-weight:bold;
+color: #0C204C;
+padding-left: 30px
+}
+#tgreason #tgreason-text-content{
+font-family: 'Roboto', sans-serif;
+text-align:center;
+border-style:none;
+color: #46505D;
+padding: 25px 100px;
+}
+#tgreason #tgreason-left{
+padding: 30px
+}
+#tgreason #tgreason-right{
+box-shadow:1px 3px 15px lightgray;
+background-color: white;
+padding: 30px;
+}
+#tgreason #tgreason-content #tgreason-left #tgreason-title-left{
+font-family: 'Roboto', sans-serif;
+font-size:25px;
+font-weight:bold;
+color: #46505D;
+}
+#tgreason #tgreason-content #tgreason-right #tgreason-title-right{
+font-family: 'Roboto', sans-serif;
+font-size:25px;
+font-weight:bold;
+color: #3197FF;
+}
+#tgreason .icon{
+width: 30px;
+}
+#tgreason span{
+font-size: 16px;
+font-family: 'Roboto', sans-serif;
+color: #46505D;
+}
+#tgreason-left > div,
+#tgreason-right > div {
+margin-bottom: 30px;
+display: flex;
+align-items: center;	
+}
+/*===========================
+=========TGcontent===========
+===========================*/
+#tgcontent{
+}
+#tgcontent-overall{
+padding-bottom: 50px;
+overflow: hidden;
+}
+#tgcontent-left{
+}
+#tgcontent-right{
+}
+#tgcontent h2{
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+color: #062466;
+text-align: center;
+margin: 60px 0;
+}
+#tgcontent-left img{
+width: 70%;
+margin: 0 auto;
+display: block;
+}
+#tgcontent .tgcontent-icon{
+width:50px;
+}
+#tgcontent #tgcontent-right span{
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: bold;
+color: black;
+}
+#tgcontent #tgcontent-right p{
+font-family: 'Roboto', sans-serif;
+font-size:17px;
+color: #46505D;
+margin-left:59px;
+border-style:none;
+}
+/*========================
+=========TGtopic==========
+========================*/
+#tgtopic{
+background: url("/resources/images/thanhgiang/Tg-business/topic.jpg") no-repeat;
+background-size: 100% 100%;
+padding-bottom: 50px;
+}
+#tgtopic > div {
+}
+#tgtopic > img{
+}
+#tgtopic #tgtopic-text img{
+width: 100px;
+}
+#tgtopic #tgtopic-text h2{
+font-family: 'Roboto', sans-serif;
+font-weight:bold;
+color: #FFFFFF;
+padding-left: 15px;
+}
+#tgtopic #tgtopic-text{
+padding: 30px 0px;
+padding-bottom: 0;
+}
+#tgtopic #tgtopic-text-content{
+font-family: 'Roboto', sans-serif;
+text-align: center;
+font-size: 17px;
+border-style: none;
+color: #eaeaea;
+padding: 30px 250px
+}
+.card-group{
+}
+.card {
+font-family: 'Roboto', sans-serif;
+}
+.card .card-body a{
+color: #3197FF;
+}
+.card-body {
+background: white;
+overflow: hidden;
+text-align: center;
+padding: 20px 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.card > div {
+border-radius: 5px;
+overflow: hidden;
+}
+.card .card-title{
+font-weight:bold;
+color:#062466;
+}
+.card .card-text{
+color:#46505D;
+letter-spacing:1px;
+border-style:none;
+}
+.card .wapper-card-image {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0;
+}
+.card .wapper-card-image img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.wapper-card-body {
+position: relative;
+padding-bottom: 63.25%;
+padding-top: 25px;
+height: 0;
+}
+.wapper-card-body .card-body {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+/*========================
+=========TGfunction=======
+========================*/
+#tgfunction{
+padding-bottom: 50px;
+}
+#tgfunction h2{
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+color: #062466;
+text-align: center;
+}
+#tgfunction-content {
+padding-top: 70px;
+}
+#tgfunction-content .item_ > div {
+text-align: center;
+font-family: 'Roboto', sans-serif;
+}
+#tgfunction-content .item_ div img {
+margin: 0 auto;
+width:100px;
+}
+#tgfunction-content .item_ div p {
+font-size: 18px;
+color: #46505D;
+padding: 40px 70px;
+min-height: 165px;
+}
+#tgfunction .tgfunction-button{
+padding:20px 40px;
+font-family: 'Roboto', sans-serif;
+font-size:16px;
+font-weight:500;
+background-image: linear-gradient(to right, rgb(52, 134, 215), rgb(89, 166, 244));
+border-style:none;
+box-shadow: 1px 1px 5px 0px #333;
+}
+
+/*=======================
+=========TGimage=========
+=======================*/
+
+#tgimage{
+background-color:#F4F8FD;
+text-align: center;
+padding-bottom: 50px;
+}
+ #tgimage h2{
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+color: #062466;
+text-align: center;
+padding: 30px 0;
+}
+#tgimage-carousel {
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+padding: 30px 0;
+}
+#tgimage-carousel > img {
+width: 50%;
+filter:brightness(40%);
+cursor: pointer;
+}
+#tgimage-carousel > img.active {
+position: absolute;
+filter:brightness(100%);
+border-radius: 10px;
+z-index: 1;
+}
+
+/*=============================
+=========TGimage-brand=========
+=============================*/
+
+#tgimage-brand{
+text-align: center;
+padding: 50px 0;
+}
+#tgimage-brand img{
+width: 100%;
+}
+
+@media(max-width: 1200px) {
+	.card {
+	margin-bottom: 20px;
+	}
+}
+@media(max-width: 768px) {
+	#tgbusiness {
+    background-size: auto
+	}
+	#tgbusiness-right img {
+	float: unset;
+	margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+	}
+	#tgbusiness-header {
+	display: block;
+	}
+	#tgbusiness-header #myNavbar {
+	background: white;
+    z-index: 1;
+    position: relative;
+	}
+	button.navbar-toggle .icon-bar {
+	background: #333;
+	}
+	#tgbusiness-header ul li {
+    display: block;
+	}
+	button.navbar-toggle {
+    background: white;
+	}
+	#tgbusiness-header a {
+	color: #333;
+	}
+	
+	#tgreason #tgreason-text img {
+	width: 60px;
+	}
+	#tgreason #tgreason-text h2 {
+	text-align: left;
+	}
+	#tgreason #tgreason-text-content {
+	padding: 10px;
+	}
+	
+	#tgreason #tgreason-left {
+	padding: 0
+	}
+	
+	#tgcontent-left img {
+	width: 80%;
+	}
+	
+	#tgtopic {
+    background-size: auto 3000px;
+	}
+	#tgtopic #tgtopic-text-content {
+	padding: 15px 0px;
+	}
+	#tgfunction-content .item_ div p {
+	min-height: unset;
+    padding: 20px;
+	}
+	#tgfunction-content .item_ {
+	margin-bottom: 20px;
+	}
+	#tgfunction-content {
+	padding-top: 30px;
+	}
+}
+@media(max-width: 500px) {
+	
+}

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ttt3ew');
+  src:  url('../fonts/icomoon.eot?ttt3ew#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ttt3ew') format('truetype'),
+    url('../fonts/icomoon.woff?ttt3ew') format('woff'),
+    url('../fonts/icomoon.svg?ttt3ew#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-document_mini:before {
+  content: "\e93a";
+}
+.icon-facebook:before {
+  content: "\e94d";
+}
+.icon-telephone:before {
+  content: "\e955";
+}
+.icon-guid:before {
+  content: "\e939";
+}
+.icon-biology_new:before {
+  content: "\e935";
+}
+.icon-chemist_new:before {
+  content: "\e936";
+}
+.icon-english_new:before {
+  content: "\e937";
+}
+.icon-math_new:before {
+  content: "\e938";
+}
+.icon-physics_new:before {
+  content: "\e942";
+}
+.icon-download_new:before {
+  content: "\e931";
+}
+.icon-square:before {
+  content: "\e932";
+}
+.icon-upload_new:before {
+  content: "\e933";
+}
+.icon-play_new:before {
+  content: "\e934";
+}
+.icon-ic_overview-01:before {
+  content: "\e930";
+}
+.icon-download2:before {
+  content: "\e92e";
+}
+.icon-logout:before {
+  content: "\e92f";
+}
+.icon-info:before {
+  content: "\e92b";
+}
+.icon-login:before {
+  content: "\e92c";
+}
+.icon-setting:before {
+  content: "\e92d";
+}
+.icon-person-question:before {
+  content: "\e92a";
+}
+.icon-cancel:before {
+  content: "\e928";
+}
+.icon-photo-camera:before {
+  content: "\e929";
+}
+.icon-edit:before {
+  content: "\e927";
+}
+.icon-calculator-symbols:before {
+  content: "\e900";
+}
+.icon-list:before {
+  content: "\e901";
+}
+.icon-book:before {
+  content: "\e902";
+}
+.icon-calendar-end:before {
+  content: "\e903";
+}
+.icon-time:before {
+  content: "\e904";
+}
+.icon-medal:before {
+  content: "\e905";
+}
+.icon-password:before {
+  content: "\e906";
+}
+.icon-physic-board:before {
+  content: "\e907";
+}
+.icon-play:before {
+  content: "\e908";
+}
+.icon-question:before {
+  content: "\e909";
+}
+.icon-right-arrow:before {
+  content: "\e90a";
+}
+.icon-smile-happy:before {
+  content: "\e90b";
+}
+.icon-clock:before {
+  content: "\e90c";
+}
+.icon-card:before {
+  content: "\e90d";
+}
+.icon-chemistry:before {
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e90f";
+}
+.icon-search:before {
+  content: "\e910";
+}
+.icon-english:before {
+  content: "\e911";
+}
+.icon-biology:before {
+  content: "\e912";
+}
+.icon-physic:before {
+  content: "\e913";
+}
+.icon-file-attach:before {
+  content: "\e914";
+}
+.icon-download .path1:before {
+  content: "\e915";
+  color: rgb(35, 31, 32);
+}
+.icon-download .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+.icon-download .path3:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+.icon-task-list:before {
+  content: "\e918";
+}
+.icon-slideshow:before {
+  content: "\e919";
+}
+.icon-video-player:before {
+  content: "\e91a";
+}
+.icon-global:before {
+  content: "\e91b";
+}
+.icon-calendar:before {
+  content: "\e91c";
+}
+.icon-ranking .path1:before {
+  content: "\e91d";
+  color: rgb(35, 31, 32);
+}
+.icon-ranking .path2:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-ranking .path3:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(35, 31, 32);
+}
+.icon-ranking .path4:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-ranking .path5:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-ranking .path6:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-group:before {
+  content: "\e923";
+}
+.icon-time2:before {
+  content: "\e924";
+}
+.icon-folder .path1:before {
+  content: "\e925";
+  color: rgb(255, 255, 255);
+}
+.icon-folder .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(1, 1, 1);
+}
+

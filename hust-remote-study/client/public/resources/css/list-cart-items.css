@@ -1,0 +1,198 @@
+.title-main {
+font-family: RobotoSlab;
+color: #667A8A;
+font-size: 25px;
+text-align: center;
+padding-bottom: 20px;
+}
+.avatar-course-wrapper {
+padding: 5px 0;
+}
+.avatar-course-wrapper img {
+width: 100%;
+max-height: 120px;
+}
+.course-item-panel {
+border: 1px solid #ddd;
+padding: 10px;
+margin-bottom: 20px;
+box-shadow: 0px 5px 5px #ddd;
+background: white;
+}
+.course-info-panel .info1-panel {
+display: flex;
+align-items: center;
+padding-bottom:5px;
+}
+.course-payment-panel .price-panel {
+margin-right: 30px;
+color: #333;
+font-size: 14px;
+text-align: right;
+font-family: RobotoBold;
+margin-bottom: 15px;
+}
+.course-info-panel .member-panel img {
+width: 30px;
+}
+.course-info-panel .star-panel {}
+.course-info-panel {
+height: 90px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.course-content-panel{
+height:120px;
+}
+.course-content-panel .label-panel {
+height: 30px;
+display: flex;
+align-items: center;
+font-family: RobotoBold;
+}
+.label-top-result{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: -15px;
+margin-right: -15px;
+margin-bottom: 5px;
+}
+.course-payment-panel{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-end;
+height:120px;
+padding-right: 10px;
+padding: 0
+}
+.note-text{
+color: red;
+font-style: italic;
+font-size: 12px;
+}
+.button-payment{
+color: #fff;
+padding: 6px 15px;
+border-radius: 3px;
+background: #3197FF;
+border: none;
+outline: none;
+position: absolute;
+top: -20px;
+right: -20px;
+background: red;
+border-radius: 100%;
+height: 35px;
+width: 35px;
+padding: 0;
+}
+.button-payment.active{
+color: #3197FF;
+padding: 6px 15px;
+border-radius: 3px;
+border-color: #2090FE;
+background: #fff;
+border: 1px solid #3197FF;
+}
+.btn-payment-selected[disabled] {
+background: #ddd;
+color: #333
+}
+.header-right-panel{
+border-bottom: 1px solid #ddd;
+padding: 5px 0;
+}
+.item-course-bought{
+display: flex;
+justify-content: space-between;
+border-bottom: 1px dashed #ddd;
+padding: 15px 0;
+position: relative;
+z-index: 1;
+}
+.item-course-bought label {
+margin-bottom: 0;
+padding-right: 5px;
+}
+.remove-course-item {
+position: absolute;
+z-index: 2;
+top: calc(50% - 10px);
+right: 0;
+width: 20px;
+padding: 3px 5px;
+background: #ddd;
+color: #676767;
+border-radius: 100%;
+cursor: pointer;
+}
+.item-course-bought:HOVER .remove-course-item {
+display: block;
+background: #ff0000ad;
+color: white;
+}
+.item-course-bought .price-html {
+padding-right: 30px;
+text-align: right;
+}
+.item-course-bought:HOVER .remove-course-item {
+display: block;
+background: #ff0000ad;
+color: white;
+}
+#selected-courses-panel .price-course-item {
+font-size: 12px;
+}
+.label-result-selected {
+color: #333;
+margin-right: 5px
+}
+.btn-payment-selected {
+margin-bottom: 5px;
+background: #3197FF;
+color: white;
+border: 0;
+padding: 6px 15px;
+border-radius: 3px;
+}
+@media(max-width: 768px) {
+}
+#page-panel {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-bottom: 10px;
+flex-wrap: wrap;
+}
+#page-panel > button {
+width: 30px;
+height: 30px;
+border: 1px solid;
+margin-left: 5px;
+text-align: center;
+padding-top: 3px;
+cursor: pointer;
+background: white;
+color: #3197FF;
+outline: none;
+}
+#page-panel > button.active,
+#page-panel > button:HOVER {
+color: white;
+background: #3197FF;
+}
+#page-panel > button {
+margin-top: 10px;
+}
+#courses-panel {
+min-height: 500px;
+}
+#input {
+border: 1px solid #ddd;
+padding: 5px 10px;
+height: 40px;
+margin-right: 20px;
+}

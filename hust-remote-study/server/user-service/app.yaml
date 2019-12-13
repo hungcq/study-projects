@@ -1,0 +1,5 @@
+runtime: nodejs
+env: flex
+service: user
+automatic_scaling:
+  max_num_instances: 1

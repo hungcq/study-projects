@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost:3000", "https://hust-remote-study.herokuapp.com"],
+    "responseHeader": ["Content-Type"],
+    "method": ["GET", "HEAD", "DELETE"],
+    "maxAgeSeconds": 3600
+  }
+]

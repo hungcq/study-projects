@@ -1,0 +1,76 @@
+.modal-notice .modal-icon-box {
+position: absolute;
+top: -60px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.modal-notice .modal-icon-box .icon__ {
+font-size: 50px;
+background: #36bf7b;
+color: white;
+border-radius: 100%;
+padding: 10px;
+box-sizing: content-box;
+}
+.modal-notice .icon-notice-panel.showError .icon__ {
+background: #ff7077;
+padding: 10px 19px;
+}
+.modal-notice .icon-notice-panel.showError .btn-close-bottom {
+background: #ff7077;
+}
+.modal-notice .icon-notice-panel.showInfo .icon__ {
+background: #00d6ef;
+padding: 10px 23px;
+}
+.modal-notice .icon-notice-panel.showQuestion .icon__ {
+padding: 10px 17px;
+background: #ff7077
+}
+.modal-notice .icon-notice-panel.showInfo .btn-close-bottom {
+background: #00d6ef;
+}
+.modal-notice .icon-notice-panel.showQuestion .btn-close-bottom {
+width: 40%;
+background: #ff7077
+}
+.modal-notice .icon-notice-panel.showQuestion .btn-close-bottom[data-result="false"] {
+background: white;
+color: #333;
+border: 1px solid #333;
+}
+.modal-notice .icon-notice-panel {
+position: relative;
+padding-top: 20px;
+}
+.modal-notice .m-title {
+margin-bottom: 10px;
+font-size: 18px;
+text-align: center;
+font-weight: bold;
+}
+.modal-notice .btn-close-bottom {
+width: 80%;
+background: #36bf7b;
+color: white;
+border: 0;
+padding: 10px;
+text-transform: uppercase;
+border-radius: 3px;
+margin: 0 auto;
+display: block;
+}
+.modal-notice .m-msg {
+text-align: center;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+@media(max-width: 768px) {
+	.my-modal.fade.in {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	}
+}

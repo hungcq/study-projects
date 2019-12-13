@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+@font-face {
+font-family: Roboto;
+src: url(../../resources/fonts/roboto/roboto-Regular.ttf);
+}
+@font-face {
+font-family: RobotoBold;
+src: url(../../resources/fonts/roboto/roboto-Bold.ttf);
+}
+@font-face {
+font-family: RobotoSlab;
+src: url(../../resources/fonts/roboto/roboto-slab.regular.ttf);
+}
+@font-face {
+font-family: RobotoSlabBold;
+src: url(../../resources/fonts/roboto/roboto-slab.bold.ttf);
+}
