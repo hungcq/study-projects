@@ -1,0 +1,4 @@
+HANDOUT_URL = https://github.com/esolneman/OOP-Helper-Handout-Template
+HANDOUT_BRANCH_PATH = refs/heads/Evaluation
+HANDOUT_BRANCH_NAME = Evaluation
+TASK = Lunar Lander
