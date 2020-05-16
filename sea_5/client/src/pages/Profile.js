@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Grid, Header, Image, Segment } from 'semantic-ui-react';
 import { doBuyBid, doGetUserInfo } from '../actions';
-import connect from 'react-redux/es/connect/connect';
+import { connect } from 'react-redux';
 
 class MyProfile extends Component {
 
