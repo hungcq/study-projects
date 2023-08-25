@@ -1,4 +1,0 @@
-1. Open to Register to Borrow Mock-up HTML.
-2. Open home.html.
-3. Choose book from the list, click Register to Borrow.
-4. Submit or cancel.

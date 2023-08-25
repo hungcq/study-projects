@@ -1,8 +1,0 @@
-/.idea
-/node_modules
-/news.log
-/package-lock.json
-# exclude everything
-uploads/*
-# exception to the rule
-!uploads/.gitkeep

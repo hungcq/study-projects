@@ -1,5 +1,0 @@
-1. Open to Add New Copy Mock-up HTML.
-2. Open home.html.
-3. Click "Add New Copy" button.
-4. Field in the form. Copy number and Price field must be numberic.
-5. Click submit. Error if Copy number and Price field is not numberic. Ok otherwise.

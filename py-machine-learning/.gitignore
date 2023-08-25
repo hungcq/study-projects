@@ -1,0 +1,6 @@
+/.idea/
+/data/aclImdb
+/src/__pycache__
+/data/hand-written
+/data/creditcard.csv
+/data/*.csv

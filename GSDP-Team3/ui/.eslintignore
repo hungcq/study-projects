@@ -1,7 +1,0 @@
-node_modules/
-build/
-scripts/
-config/
-.vscode
-webpack.config.js
-webpack.config.production.js

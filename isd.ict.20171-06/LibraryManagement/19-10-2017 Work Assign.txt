@@ -1,9 +1,0 @@
-Chu Quoc Hung
-- ER diagram
-
-Nguyen Quoc Huy
-- Database model
-
-Review:
-- Huy review: Hung need to add image for ER Diagram
-
